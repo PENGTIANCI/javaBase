@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--课程管理系统的部分信息-->
+<CourseSystem>
+    <!--教师信息部分-->
+    <Teachers>
+        <Teacher>
+            <id>01</id>
+            <name>王老师</name>
+        </Teacher>
+        <Teacher>
+            <id>02</id>
+            <name>张老师</name>
+        </Teacher>
+    </Teachers>
+
+    <!--学生信息部分-->
+    <Students>
+        <Student>
+            <id>001</id>
+            <name>小王</name>
+        </Student>
+        <Student>
+            <id>002</id>
+            <name>小张</name>
+        </Student>
+        <Student>
+            <id>003</id>
+            <name>小明</name>
+        </Student>
+    </Students>
+
+    <!--课程信息部分-->
+    <Courses>
+        <Course>
+            <id>01</id>
+            <name>数学</name>
+        </Course>
+        <Course>
+            <id>02</id>
+            <name>语文</name>
+        </Course>
+    </Courses>
+
+    <!--教师与课程的关系，即教师教哪门课-->
+    <TechCourses>
+        <TechCourse>
+            <TeacherId>01</TeacherId>
+            <CourseId>02</CourseId>
+        </TechCourse>
+        <TechCourse>
+            <TeacherId>02</TeacherId>
+            <CourseId>01</CourseId>
+        </TechCourse>
+    </TechCourses>
+
+    <!--学生某次考试成绩信息-->
+    <Scores>
+        <!--学生学习课程所得分数-->
+        <Score>
+            <CourseId>01</CourseId>
+            <StudentId>001</StudentId>
+            <Score>70</Score>
+        </Score>
+        <Score>
+            <CourseId>01</CourseId>
+            <StudentId>002</StudentId>
+            <Score>90</Score>
+        </Score>
+        <Score>
+            <CourseId>01</CourseId>
+            <StudentId>003</StudentId>
+            <Score>75</Score>
+        </Score>
+
+        <Score>
+            <CourseId>02</CourseId>
+            <StudentId>001</StudentId>
+            <Score>71.5</Score>
+        </Score>
+        <Score>
+            <CourseId>02</CourseId>
+            <StudentId>002</StudentId>
+            <Score>82</Score>
+        </Score>
+        <Score>
+            <CourseId>02</CourseId>
+            <StudentId>003</StudentId>
+            <Score>50</Score>
+        </Score>
+    </Scores>
+</CourseSystem>
